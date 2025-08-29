@@ -1,0 +1,11 @@
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/bin/Debug/net9.0/TaskManager.Domain.deps.json
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/bin/Debug/net9.0/TaskManager.Domain.dll
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/bin/Debug/net9.0/TaskManager.Domain.pdb
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.AssemblyInfoInputs.cache
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.AssemblyInfo.cs
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.csproj.CoreCompileInputs.cache
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.dll
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/refint/TaskManager.Domain.dll
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/TaskManager.Domain.pdb
+/Users/ouedraogoabdoulwadoudou/TaskManager/src/TaskManager.Domain/obj/Debug/net9.0/ref/TaskManager.Domain.dll

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskManager.API</name>
+    </assembly>
+    <members>
+        <member name="M:TaskManager.API.Controllers.TasksController.GetAllTasks(System.Threading.CancellationToken)">
+            <summary>
+            Récupère toutes les tâches
+            </summary>
+        </member>
+        <member name="M:TaskManager.API.Controllers.TasksController.GetTask(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Récupère une tâche par son ID
+            </summary>
+        </member>
+        <member name="M:TaskManager.API.Controllers.TasksController.CreateTask(TaskManager.Application.Commands.CreateTask.CreateTaskCommand,System.Threading.CancellationToken)">
+            <summary>
+            Crée une nouvelle tâche
+            </summary>
+        </member>
+        <member name="M:TaskManager.API.Controllers.TasksController.UpdateTask(System.Guid,TaskManager.API.Controllers.UpdateTaskRequest,System.Threading.CancellationToken)">
+            <summary>
+            Met à jour une tâche existante
+            </summary>
+        </member>
+        <member name="M:TaskManager.API.Controllers.TasksController.UpdateTaskStatus(System.Guid,TaskManager.API.Controllers.UpdateTaskStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Met à jour le statut d'une tâche
+            </summary>
+        </member>
+        <member name="M:TaskManager.API.Controllers.TasksController.DeleteTask(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Supprime une tâche
+            </summary>
+        </member>
+    </members>
+</doc>
