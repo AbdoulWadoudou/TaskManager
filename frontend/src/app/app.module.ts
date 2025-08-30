@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import 'zone.js'; 
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
+import { importProvidersFrom } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -19,43 +21,30 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatChipsModule } from '@angular/material/chips';
 
-import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
-import { TaskListComponent } from './components/task-list/task-list.component';
-import { TaskFormComponent } from './components/task-form/task-form.component';
-import { TaskDetailComponent } from './components/task-detail/task-detail.component';
+import { routes } from './app.routes';
 
-@NgModule({
-  declarations: [
-   
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    
-    // Angular Material modules
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatIconModule,
-    MatTableModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSnackBarModule,
-    MatChipsModule,
-    AppComponent,
-    TaskListComponent,
-    TaskFormComponent,
-    TaskDetailComponent
-  ],
-  providers: [],
-//   bootstrap: [AppComponent]
-})
-export class AppModule { }
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter(routes),
+    importProvidersFrom(
+      BrowserAnimationsModule,
+      HttpClientModule,
+      ReactiveFormsModule,
+      // Angular Material modules
+      MatToolbarModule,
+      MatCardModule,
+      MatButtonModule,
+      MatIconModule,
+      MatTableModule,
+      MatDialogModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatSelectModule,
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatSnackBarModule,
+      MatChipsModule
+    )
+  ]
+}).catch(err => console.error(err));
